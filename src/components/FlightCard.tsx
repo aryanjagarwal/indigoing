@@ -18,10 +18,9 @@ interface Props {
 
 
 
-//export function FlightCard({ flight, name }: Props) {
+
 export function FlightCard({ flight, name, arrival, airline, departure, live, aircraft }: Props) {
-   //const { flight_iata, status, speed, dep_iata, arr_iata } = flight;
-   // mycode
+   
    const { iata } = airline;
    const { flight_status } = flight;
    //const { iata } = departure.iata;

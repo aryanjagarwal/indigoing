@@ -16,47 +16,12 @@ export default function Navbar() {
                </div>
             </Link>
 
-            {/* <nav className='hidden ml-5 md:flex items-center gap-4 text-sm font-medium'>
-               <Link href='/airlines' className='text-muted-foreground hover:text-foreground' prefetch={false}>
-                  Airlines
-               </Link>
-               <Link href='/airlines/QR' className='text-muted-foreground hover:text-foreground' prefetch={false}>
-                  Flights
-               </Link>
-            </nav> */}
 
             <div className='ml-auto'>
                <CommandSearch />
             </div>
 
-            {/* <div className='ml-2 flex items-center'>
-               <Sheet>
-                  <SheetTrigger asChild>
-                     <Button variant='outline' size='icon' className='md:hidden mr-2'>
-                        <MenuIcon className='w-6 h-6' />
-                        <span className='sr-only'>Toggle navigation</span>
-                     </Button>
-                  </SheetTrigger>
-
-                  <SheetContent side='right' className='sm:max-w-xs'>
-                     <nav className='grid gap-4 p-4 text-sm font-medium'>
-                        <Link href='#' className='flex items-center gap-2 text-muted-foreground hover:text-foreground' prefetch={false}>
-                           <PlaneIcon className='w-5 h-5' />
-                           Flights
-                        </Link>
-                        <Link href='/airlines' className='flex items-center gap-2 text-muted-foreground hover:text-foreground' prefetch={false}>
-                           <CloudIcon className='w-5 h-5' />
-                           Airlines
-                        </Link>
-
-                        <Link href='#' className='flex items-center gap-2 text-muted-foreground hover:text-foreground' prefetch={false}>
-                           <InfoIcon className='w-5 h-5' />
-                           About
-                        </Link>
-                     </nav>
-                  </SheetContent>
-               </Sheet>
-            </div> */}
+            
          </div>
       </header>
    );

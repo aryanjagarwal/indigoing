@@ -21,9 +21,7 @@ export default async function Flights({ params, searchParams }: FlightsProps) {
    const limit = searchParams?.limit || 30;
 
    
-   //const filteredFlights = flight_data.response.filter((flight: FlightInfo) => flight.flight_iata && flight.flight_iata.toLowerCase().includes(query.toLowerCase())).slice(0, limit);
-   //mycode
-   //const filteredFlights = flight_data.response.filter((flight: FlightInfo) => flight.airline.iata && flight.airline.iata.toLowerCase().includes(query.toLowerCase())).slice(0, limit);
+   
    const filteredFlights = flight_data.filter((flight: FlightInfo) => flight.airline.iata && flight.airline.iata.toLowerCase().includes(query.toLowerCase())).slice(0, limit);
    const count: number = filteredFlights.length;
    console.log(count);
@@ -43,8 +41,7 @@ export default async function Flights({ params, searchParams }: FlightsProps) {
          {filteredFlights.length > 0 ? (
             <div className='grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-8'>
                {filteredFlights.map((flight: FlightInfo) => (
-                  /* <FlightCard key={flight.flight_iata} flight={flight} name={mappings[params.id]} />    */ // mycode
-                  //<FlightCard key={flight.airline.iata} flight={flight} name={mappings[params.id]} />
+                  
                   <FlightCard
                      key={flight.airline.iata}
                      flight={flight}

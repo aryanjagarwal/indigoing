@@ -3,105 +3,6 @@ export interface Airline {
    iataCode: string;
 }
 
-/*
-export interface FlightInfo {
-   hex: string;
-   reg_number: string;
-   flag: string;
-   lat: number;
-   lng: number;
-   alt: number;
-   dir: number;
-   speed: number;
-   v_speed: number;
-   squawk: string;
-   flight_number: string;
-   flight_icao: string;
-   flight_iata: string;
-   dep_icao: string;
-   dep_iata: string;
-   arr_icao: string;
-   arr_iata: string;
-   airline_icao: string;
-   airline_iata: string;
-   aircraft_icao: string;
-   updated: number;
-   status: string;
-}
-*/
-
-
-
-
-
-/*
-export interface FlightInfo {
-   hex: string; // ICAO24 aircraft address
-   reg_number: string; // Aircraft registration
-   flag: string; // Aircraft type (e.g., A321)
-   lat: number; // Latitude of the aircraft
-   lng: number; // Longitude of the aircraft
-   alt: number; // Altitude of the aircraft
-   dir: number; // Direction of travel (heading)
-   speed: number; // Horizontal speed
-   v_speed: number; // Vertical speed
-   squawk: string; // Transponder code
-   flight_number: string; // Flight number
-   flight_icao: string; // Flight ICAO code
-   flight_iata: string; // Flight IATA code
-   dep_icao: string; // Departure airport ICAO code
-   dep_iata: string; // Departure airport IATA code
-   arr_icao: string; // Arrival airport ICAO code
-   arr_iata: string; // Arrival airport IATA code
-   airline_icao: string; // Airline ICAO code
-   airline_iata: string; // Airline IATA code
-   aircraft_icao: string; // Aircraft ICAO code
-   updated: number; // Timestamp of the last update
-   status: string; // Flight status
-}
-  
-
-// Example mapping function  my code
-const mapFlightDataToFlightInfo = (data: any): FlightInfo => ({
-   hex: data.aircraft.icao24,
-   reg_number: data.aircraft.registration,
-   flag: data.aircraft.iata,
-   lat: data.live.latitude,
-   lng: data.live.longitude,
-   alt: data.live.altitude,
-   dir: data.live.direction,
-   speed: data.live.speed_horizontal,
-   v_speed: data.live.speed_vertical,
-   squawk: data.aircraft.iata || '', // Not provided in the original data
-   flight_number: data.flight.number,
-   flight_icao: data.flight.icao,
-   flight_iata: data.flight.iata,
-   dep_icao: data.departure.icao,
-   dep_iata: data.departure.iata,
-   arr_icao: data.arrival.icao,
-   arr_iata: data.arrival.iata,
-   airline_icao: data.airline.icao,
-   airline_iata: data.airline.iata,
-   aircraft_icao: data.aircraft.icao,
-   updated: new Date(data.live.updated).getTime(), // Converting timestamp to number
-   status: data.flight_status,
-});
-
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 interface DepartureInfo {
@@ -179,23 +80,6 @@ interface DepartureInfo {
  
 
  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 export const airlinesList: Airline[] = [

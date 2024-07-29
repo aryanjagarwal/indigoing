@@ -8,14 +8,6 @@ import SearchSuggestions from "@/components/SearchSuggestions";
 export default async function Component() {
 
 
-
-
-   //const flight_data = await flightInfo("AC");
-   //const count: number = flight_data.response.length;
-   // console.log(count);
-
-
-   //let flight_data;
    let flight_data: FlightInfo[] = [];
    try {
       flight_data = await flightInfo("6E");
@@ -23,15 +15,11 @@ export default async function Component() {
       console.error("Error fetching flight data:", error);
       flight_data = []; // Fallback to an empty array
    }
-   //const filteredFlights = flight_data.response?.filter((flight: FlightInfo) => flight.flight_iata).slice(0, 8) || [];
-   // my code
+   
    const filteredFlights = flight_data.filter((flight: FlightInfo) => flight.airline.iata).slice(0, 8) || [];
    let airline = "6E";
 
 
-
-   //const filteredFlights = flight_data.response.filter((flight: FlightInfo) => flight.flight_iata).slice(0, 8);
-   //let airline = "AC";
 
    return (
       <div className='flex flex-col items-center w-full min-h-screen p-8 space-y-12'>
@@ -78,8 +66,7 @@ export default async function Component() {
 
             <div className='grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-8'>
                {filteredFlights.map((flight: FlightInfo) => (
-                  /* <FlightCard key={flight.flight_iata} flight={flight} name={mappings[airline]} />   */  // my code
-                  //<FlightCard key={flight.airline.iata} flight={flight} name={mappings[airline]} />
+                 
                   <FlightCard
                      key={flight.airline.iata}
                      flight={flight}
