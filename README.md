@@ -35,3 +35,18 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 # indigoing
+
+Description: Develop a system to provide real-time flight status updates and notifications to
+passengers.
+1. Features:
+a. Real-time Updates: Display current flight status (delays, cancellations, gate
+changes).
+b. Integration with Airport Systems: Pull data from airport databases for accurate
+information.
+2. Technologies:
+a. frontend and backend: Nextjs
+b. styling: TailwindSS
+c. Component Library: Shadcn
+d. APIs: API Ninja and AviationStack
+e. Deployment: Vercel [IndiGoing Link]()
+
