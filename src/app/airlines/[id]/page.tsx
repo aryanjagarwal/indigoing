@@ -53,6 +53,7 @@ export default async function Flights({ params, searchParams }: FlightsProps) {
                      airline={flight.airline}
                      departure={flight.departure}
                      live={flight.live}
+                     aircraft={flight.aircraft}
                   />
                ))}
             </div>
