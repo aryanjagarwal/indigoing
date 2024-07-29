@@ -48,5 +48,5 @@ a. frontend and backend: Nextjs
 b. styling: TailwindSS
 c. Component Library: Shadcn
 d. APIs: API Ninja and AviationStack
-e. Deployment: Vercel [IndiGoing Link]()
+e. Deployment: Vercel [IndiGoing Link](https://indigoing.vercel.app/)
 
