@@ -88,6 +88,7 @@ export default async function Component() {
                      airline={flight.airline}
                      departure={flight.departure}
                      live={flight.live}
+                     aircraft={flight.aircraft}
                   />
                ))}
             </div>

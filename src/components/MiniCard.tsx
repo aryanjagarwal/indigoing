@@ -31,22 +31,7 @@ const MiniCard = ({ flight, name, arrival, airline, departure, live }: Props) =>
                 <Button variant='outline'>View Flight Details</Button>
             </DialogTrigger>
             <DialogContent className='sm:max-w-[600px]'>
-                <div className='flex items-center justify-between border-b pb-4'>
-                    <DialogTitle>
-                        {name} {airline.iata}
-                    </DialogTitle>
-                </div>
-                <div className='grid grid-cols-2 gap-x-10 gap-y-3 py-2'>
-                    
-                    {Object.entries(flight).map(([key, value]) => (
-                        <div className='flex justify-between gap-5 w-full text-right' key={key}>
-                            <div className='text-muted-foreground capitalize'>{key.split("_").join(" ")}</div>
-                            <div>{typeof value === 'object' ? JSON.stringify(value) : value}</div>
-                            {/*<div>{value}</div> */}
-                        </div>
-                    ))}
-
-                </div>
+                
             </DialogContent>
         </Dialog>
     )

@@ -21,7 +21,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <Footer />
          </body>
          <Analytics />
-         <script async src='https://analytics.umami.is/script.js' data-website-id='0baa8f92-8ee2-43d0-b7ae-426caf229772'></script>
+         <script defer src="https://cloud.umami.is/script.js" data-website-id="9a8d9bbd-3033-40df-8088-c336c1629ea5"></script>
       </html>
    );
 }
